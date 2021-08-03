@@ -1,0 +1,121 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+@keyframes fade-in {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #7c0a02;
+}
+
+a {
+    color: white;
+    margin: 10px 50px 10px 10px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#logo {
+    font-family: 'WindSong', cursive;
+    font-size: 40px;
+    margin: 0;
+}
+
+#logo-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+p {
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#content {
+    display: flex;
+    margin: 0;
+    height: 1000px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: #2b2b2b;
+    color: white;
+}
+
+#gallery {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+
+.art {
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.art:hover {
+    opacity: 0.8;
+}
+
+.expand-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.art-container {
+    position: relative;
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.expand-icon:hover, .close-icon:hover {
+    opacity: 0.5;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
